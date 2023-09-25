@@ -38,5 +38,6 @@ I install Terraform by adding the follow instruction for linux :
       sudo apt-get update && sudo apt-get install terraform
 ```
 
-I add these lines on my .gitpod.yml file
-
+Installations have been refactored in bash script, please see scripts:
+    - [install_terraform_cli](../bin/install_terraform_cli.sh
+    - [.gitpod.yml](../.gitpod.yml
