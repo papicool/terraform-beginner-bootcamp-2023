@@ -39,5 +39,5 @@ I install Terraform by adding the follow instruction for linux :
 ```
 
 Installations have been refactored in bash script, please see scripts:
-    - [install_terraform_cli](../bin/install_terraform_cli.sh)
-    -[ .gitpod.yml](../.gitpod.yml)
+    [install_terraform_cli](../bin/install_terraform_cli.sh)
+    and [ .gitpod.yml](../.gitpod.yml)
