@@ -39,5 +39,20 @@ I install Terraform by adding the follow instruction for linux :
 ```
 
 Installations have been refactored in bash script, please see scripts:
-    [install_terraform_cli](../bin/install_terraform_cli.sh)
-    and [ .gitpod.yml](../.gitpod.yml)
+- [install_terraform_cli](../bin/install_terraform_cli.sh)
+- [ .gitpod.yml](../.gitpod.yml) (see terraform task)
+
+
+## Install AWS CLI
+
+
+Installations have been refactored in bash script, please see scripts:
+-    [install_aws_cli](../bin/install_aws_cli.sh)
+-    [ .gitpod.yml](../.gitpod.yml) (see aws-cli task)
+
+To configure the aws cli environment variable, pls check this [link](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
+
+We can check if our AWS credentials is configured correctly by running the following AWS CLI command:
+```sh
+aws sts get-caller-identity
+```
