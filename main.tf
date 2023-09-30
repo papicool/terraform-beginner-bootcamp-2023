@@ -9,13 +9,13 @@ terraform {
 #    }
 #  }
 
-  cloud {
-    organization = "MyTerraformBootcamp"
-
-    workspaces {
-      name = "terra-house-1"
-    }
-  }
+#   cloud {
+#     organization = "MyTerraformBootcamp"
+# 
+#     workspaces {
+#       name = "terra-house-1"
+#     }
+#   }
 
 
 
