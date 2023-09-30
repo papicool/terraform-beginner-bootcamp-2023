@@ -9,13 +9,14 @@ terraform {
 #    }
 #  }
 
-#   cloud {
-#     organization = "MyTerraformBootcamp"
-# 
-#     workspaces {
-#       name = "terra-house-1"
-#     }
-#   }
+
+   cloud {
+     organization = "MyTerraformBootcamp"
+ 
+     workspaces {
+       name = "terra-house-1"
+     }
+   }
 
 
 
@@ -38,6 +39,7 @@ provider "random" {
 
 provider "aws" {
   # Configuration options
+  region = "us-east-1"
 }
 
 
@@ -56,3 +58,4 @@ resource "aws_s3_bucket" "example" {
 output "random_bucket_name" {
   value = random_string.bucket_name.result
 }
+
