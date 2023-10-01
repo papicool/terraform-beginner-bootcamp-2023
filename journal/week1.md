@@ -61,3 +61,20 @@ See [S3 import link](https://registry.terraform.io/providers/hashicorp/aws/lates
 to import Random config use this command: ```terraform import random_string.bucket_name replace_with_bucket-name```
 
 See [Random import link](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string#import)
+
+## Terraform Module Structure
+it's recommended when developing modules to use the directory `modules`
+### Modules Sources and passing input variables to a module
+We can specify or import a module by using the following code from various places:
+```terraform
+module "terrahouse_aws" {
+  source = "./modules/terrahouse_aws"
+  user_uuid = var.user_uuid
+  bucket_name = var.bucket_name
+  
+}
+```
+As you see, we can also pass input variables to our module.
+The module has to declare the terraform variables in its own ```variables.tf``` file
+
+See [Modules Sources](https://developer.hashicorp.com/terraform/language/modules/sources
