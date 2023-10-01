@@ -1,10 +1,17 @@
 # Terraform Beginner Bootcamp 2023 - Week 0
-Pre-requis:
-    - Jumppad
-    - AWS account
-    - GIT
-    - Terraform cloud
-    - Github
+## Table of content
+- [Pre-requis](#Pre-requis)
+- [Semantic Versioning](#semantic-versioningg)
+- [Install the Terraform CLI](#install-the-terraform-cli)
+- [Install AWS CLI](#install-aws-cli)
+
+## Pre-requis
+
+    - [Jumppad](https://jumppad.dev/)
+    - [AWS account](https://aws.amazon.com/?nc1=h_ls)
+    - [Github](https://github.com/)
+    - [Terraform cloud](https://app.terraform.io/)
+    - [Gitpod](https://gitpod.io/)
 
 ## Semantic Versioning
 
