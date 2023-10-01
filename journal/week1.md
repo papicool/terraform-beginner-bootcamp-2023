@@ -48,3 +48,16 @@ Terraform also automatically loads a number of variable definitions files if the
 
 - Files named exactly ```terraform.tfvars``` or ```terraform.tfvars.json```.
 - Any files with names ending in ```.auto.tfvars``` or ```.auto.tfvars.json```.
+
+
+
+## Terraform import
+Imagine we lost our state file. how to have back the state we delete?
+In our case we deployed S3 and terraform random
+We can import some resources config like S3 to a state file:
+```% terraform import aws_s3_bucket.example replace_with_bucket-name```
+See [S3 import link](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)
+
+to import Random config use this command: ```terraform import random_string.bucket_name replace_with_bucket-name```
+
+See [Random import link](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string#import)
