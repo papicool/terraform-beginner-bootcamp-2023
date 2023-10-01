@@ -1,7 +1,7 @@
 # Terraform Beginner Bootcamp 2023
 
 
-![Architectural diagram]()
+![Architectural diagram](https://github.com/papicool/terraform-beginner-bootcamp-2023/blob/main/assets/terratown.jpeg)
 
 ## Weekly Journals
 
