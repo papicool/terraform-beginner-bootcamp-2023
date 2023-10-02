@@ -19,3 +19,23 @@ variable "bucket_name" {
     error_message = "The bucket name must be between 3 and 63 characters, start and end with a lowercase letter or number, and can contain only lowercase letters, numbers, hyphens, and dots."
   }
 }
+
+variable "index_html_file" {
+  description = "Path to the local index.html file to upload to the S3 bucket"
+  type        = string
+  default     = "${path.root}/public/index.html"
+  validation {
+    condition     = can(fileexists(var.index_html_file))
+    error_message = "The specified index.html file does not exist."
+  }
+}
+
+variable "error_html_file" {
+  description = "Path to the local error.html file to upload to the S3 bucket"
+  type        = string
+  default     = "${path.root}/public/error.html"
+  validation {
+    condition     = can(fileexists(var.error_html_file))
+    error_message = "The specified error.html file does not exist."
+  }
+}
