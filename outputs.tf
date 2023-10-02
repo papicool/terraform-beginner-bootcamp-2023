@@ -3,7 +3,7 @@ output "bucket_name" {
   value = module.terrahouse_aws.bucket_name
 }
 
-output "S3_website_endpoint" {
+output "website_endpoint" {
   description = "website_endpoint of our static website"
-  value = aws_s3_bucket_website_configuration.website_configuration.website_endpoint
+  value = module.terrahouse_aws.website_endpoint
 }
