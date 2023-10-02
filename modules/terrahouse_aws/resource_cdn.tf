@@ -16,7 +16,7 @@ locals {
   s3_origin_id = "myS3Origin"
 } 
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudfront_origin_access_control#example-usage
-resource "aws_cloudfront_origin_access_control" "example" {
+resource "aws_cloudfront_origin_access_control" "default" {
   name                              = "OAC ${var.bucket_name}"
   description                       = "origin Access Control for static website hosting in ${var.bucket_name}"
   origin_access_control_origin_type = "s3"
