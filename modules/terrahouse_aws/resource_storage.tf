@@ -32,7 +32,7 @@ resource "aws_s3_object" "index_html" {
   # etag = "${md5(file("path/to/file"))}"
   etag = filemd5(var.index_html_file)
   lifecycle {
-    replace_triggered_by = [ terraform_data.terraform_data.content_version.output ]
+    replace_triggered_by = [terraform_data.content_version.output]
     ignore_changes = [etag]
   }
 }
@@ -49,7 +49,7 @@ resource "aws_s3_object" "error_html" {
   # etag = "${md5(file("path/to/file"))}"
   etag = filemd5(var.error_html_file)
   lifecycle {
-    replace_triggered_by = [ terraform_data.terraform_data.content_version.output ]
+    replace_triggered_by = [terraform_data.content_version.output]
     ignore_changes = [etag]
   }
 }
