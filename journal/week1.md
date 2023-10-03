@@ -195,3 +195,13 @@ resource "aws_instance" "web" {
 }
 ```
 See [Remote-exec link](https://developer.hashicorp.com/terraform/language/resources/provisioners/remote-exec)
+
+## Result
+Deploying our tf 
+
+
+![cloudfront](images/Screenshot%202023-10-03%20at%2016.44.18.png)
+
+Connecting to the cloudfront 
+
+![cloudfront](images/Screenshot%202023-10-03%20at%2016.38.13.png)
