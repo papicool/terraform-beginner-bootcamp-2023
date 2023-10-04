@@ -50,3 +50,9 @@ variable "content_version" {
     error_message = "The content_version must be a positive integer starting at 1."
   }
 }
+
+variable "assets_path" {
+  description = "Path to the local assets file to upload to the S3 bucket"
+  type        = string
+  #default     = "${path.root}/public/error.html"
+}

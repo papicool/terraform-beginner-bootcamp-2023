@@ -205,3 +205,23 @@ Deploying our tf
 Connecting to the cloudfront 
 
 ![cloudfront](images/Screenshot%202023-10-03%20at%2016.38.13.png)
+
+## For Each Expressions
+For each allows us to enumerate over complex data types
+
+```sh
+[for s in var.list : upper(s)]
+```
+This is mostly useful when you are creating multiples of a cloud resource and you want to reduce the amount of repetitive terraform code.
+
+[For  Expressions link](https://developer.hashicorp.com/terraform/language/expressions/for)
+[For Each Expressions link](https://developer.hashicorp.com/terraform/language/meta-arguments/for_each)
+
+## fileset Expressions
+fileset enumerates a set of regular file names given a path and pattern.
+
+```sh
+fileset(path, pattern)
+```
+
+[fileset  Expressions link](https://developer.hashicorp.com/terraform/language/functions/fileset)

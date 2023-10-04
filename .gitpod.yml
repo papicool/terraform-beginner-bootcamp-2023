@@ -15,6 +15,11 @@ tasks:
       cd $THEIA_WORKSPACE_ROOT
       source ./bin/install_aws_cli.sh
       source ~/.bash_profile
+  - name: http-server
+    before: |
+      npm install --global http-server
+    command: 
+      http-server
 vscode:
   extensions:
     - amazonwebservices.aws-toolkit-vscode
