@@ -19,7 +19,8 @@ tasks:
     before: |
       npm install --global http-server
     command: 
-      http-server
+      ls
+      #http-server
 vscode:
   extensions:
     - amazonwebservices.aws-toolkit-vscode
