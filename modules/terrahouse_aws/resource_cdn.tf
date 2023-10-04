@@ -13,7 +13,7 @@ resource "aws_s3_bucket_acl" "b_acl" {
 }
 */
 locals {
-  s3_origin_id = "myS3Origin"
+  s3_origin_id = "MyS3Origin"
 } 
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudfront_origin_access_control#example-usage
 resource "aws_cloudfront_origin_access_control" "default" {
