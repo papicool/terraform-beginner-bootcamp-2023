@@ -196,7 +196,7 @@ resource "aws_instance" "web" {
 ```
 See [Remote-exec link](https://developer.hashicorp.com/terraform/language/resources/provisioners/remote-exec)
 
-## Result
+## Result 1
 Deploying our tf 
 
 
