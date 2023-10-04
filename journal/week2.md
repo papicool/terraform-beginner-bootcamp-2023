@@ -15,7 +15,6 @@ Please see my `terraform-cloud` branch.
 
 ![cloudfront](images/Screenshot%202023-10-04%20at%2019.12.46.png)
 
-
 ### Result
 
 ![cloudfront](images/Screenshot%202023-10-04%20at%2019.07.30.png)
