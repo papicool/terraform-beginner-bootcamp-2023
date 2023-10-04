@@ -18,3 +18,6 @@ Please see my `terraform-cloud` branch.
 ### Result
 
 ![cloudfront](images/Screenshot%202023-10-04%20at%2021.29.48.png)
+
+
+![cloudfront](images/Screenshot%202023-10-04%20at%2021.42.04.png)
