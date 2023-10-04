@@ -225,3 +225,9 @@ fileset(path, pattern)
 ```
 
 [fileset  Expressions link](https://developer.hashicorp.com/terraform/language/functions/fileset)
+
+## Result 2
+
+Connecting to the cloudfront 
+
+![cloudfront](images/Screenshot%202023-10-04%20at%2012.29.27.png)
