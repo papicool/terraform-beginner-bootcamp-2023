@@ -82,7 +82,8 @@ resource "terraform_data" "content_version" {
   input = var.content_version
 }
 
-resource "aws_s3_bucket" "upload_assets" {
+
+resource "aws_s3_object" "upload_assets" {
   # https://developer.hashicorp.com/terraform/language/functions/fileset
   # https://developer.hashicorp.com/terraform/language/meta-arguments/for_each
   for_each = fileset(var.assets_path, "*.{jpeg,jpg,png,gif}")
