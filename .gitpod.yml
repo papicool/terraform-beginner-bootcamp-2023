@@ -23,6 +23,7 @@ tasks:
   - name: sinatra
     before: | 
       cd $THEIA_WORKSPACE_ROOT/terratowns_mock_server
+      chmod u+x bin/*
       bundle install
       bundle exec ruby server.rb 
 vscode:
