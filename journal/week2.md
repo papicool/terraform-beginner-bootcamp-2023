@@ -1,4 +1,13 @@
 # Terraform Beginner Bootcamp 2023 - Week 2
+## Setup Skeleton For Custom Terraform Provider
+
+I import this terratowns_mock_server project https://github.com/ExamProCo/terratowns_mock_server.git
+
+```sh
+https://github.com/ExamProCo/terratowns_mock_server.git
+cd terratowns_mock_server
+rm -rf .git
+```
 
 ## Working with Ruby
 ### Bundler
@@ -43,3 +52,7 @@ bundle exec ruby server.rb
 ```
 
 All of the code for our server is stored in the server.rb file.
+
+## Terraform Provider for Terratowns
+I create the terraform-provider-terratowns directory contening : main.go , go.mod
+I also create a bash script named `build_provider` to install all packages and dependencies
