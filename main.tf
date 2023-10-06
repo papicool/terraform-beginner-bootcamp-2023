@@ -1,5 +1,10 @@
 terraform {
-
+  required_providers {
+    terratowns = {
+      source = "local.providers/local/terratowns"
+      version = "1.0.0"
+    }
+  }
 #  backend "remote" {
 #    hostname = "app.terraform.io"
 #    organization = "MyTerraformBootcamp"
@@ -20,6 +25,13 @@ terraform {
 
 }
 
+provider "terratowns" {
+  endpoint = var.terratowns_endpoint
+  user_uuid = var.teacherseat_user_uuid
+  token = var.terratowns_access_token
+}
+
+/* 
 module "terrahouse_aws" {
   source = "./modules/terrahouse_aws"
   user_uuid = var.user_uuid
@@ -28,4 +40,4 @@ module "terrahouse_aws" {
   index_html_file =  var.index_html_file
   content_version = var.content_version
   assets_path = var.assets_path
-}
+} */
