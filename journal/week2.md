@@ -56,3 +56,10 @@ All of the code for our server is stored in the server.rb file.
 ## Terraform Provider for Terratowns
 I create the terraform-provider-terratowns directory contening : main.go , go.mod
 I also create a bash script named `build_provider` to install all packages and dependencies
+
+## CRUD
+Terraform Provider resources utilize CRUD.
+
+CRUD stands for Create, Read Update, and Delete
+
+[See CRUD on wikipedia](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
