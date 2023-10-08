@@ -4,5 +4,3 @@ index_html_file =  "/workspace/terraform-beginner-bootcamp-2023/public/index.htm
 content_version = 1
 assets_path = "/workspace/terraform-beginner-bootcamp-2023/public/assets/"
 terratowns_endpoint = "https://terratowns.cloud/api"
-teacherseat_user_uuid ="2a488e5a-b9b1-4d4f-ba6f-9e9aba84a10e" 
-terratowns_access_token = "b1043c73-12f5-46db-8027-3c0e63c9aa07"
