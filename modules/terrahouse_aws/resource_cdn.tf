@@ -121,7 +121,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   }
 
   tags = {
-    user_uuid = var.user_uuid
+    user_uuid = var.teacherseat_user_uuid
   }
 
   viewer_certificate {

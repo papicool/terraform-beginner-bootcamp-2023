@@ -1,4 +1,4 @@
-variable "user_uuid" {
+variable "teacherseat_user_uuid" {
   description = "The UUID of the user"
   type        = string
   validation {

@@ -1,4 +1,4 @@
-variable "user_uuid" {
+variable "teacherseat_user_uuid" {
   description = "The UUID of the user"
   type = string
 }
@@ -36,6 +36,3 @@ variable "terratowns_access_token" {
  type = string
 }
 
-variable "teacherseat_user_uuid" {
- type = string
-}
