@@ -63,3 +63,17 @@ Terraform Provider resources utilize CRUD.
 CRUD stands for Create, Read Update, and Delete
 
 [See CRUD on wikipedia](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
+
+
+## Result
+
+
+![terrahome](images/Screenshot%202023-10-09%20at%2003.05.19.png)
+
+![terrahome](images/Screenshot%202023-10-09%20at%2003.05.40.png)
+
+
+![terrahome](images/Screenshot%202023-10-09%20at%2003.06.31.png)
+
+
+![terrahome](images/Screenshot%202023-10-09%20at%2003.06.43.png)
