@@ -20,25 +20,13 @@ variable "bucket_name" {
   }
 }
 
-variable "index_html_file" {
-  description = "Path to the local index.html file to upload to the S3 bucket"
+variable "public_path" {
+  description = "The file path for the public directory"
   type        = string
   #default     = "${path.root}/public/index.html"
-  validation {
-    condition     = can(fileexists(var.index_html_file))
-    error_message = "The specified index.html file does not exist."
-  }
 }
 
-variable "error_html_file" {
-  description = "Path to the local error.html file to upload to the S3 bucket"
-  type        = string
-  #default     = "${path.root}/public/error.html"
-  validation {
-    condition     = can(fileexists(var.error_html_file))
-    error_message = "The specified error.html file does not exist."
-  }
-}
+
 
 
 variable "content_version" {
@@ -49,10 +37,4 @@ variable "content_version" {
     condition     = var.content_version > 0 && floor(var.content_version) == var.content_version
     error_message = "The content_version must be a positive integer starting at 1."
   }
-}
-
-variable "assets_path" {
-  description = "Path to the local assets file to upload to the S3 bucket"
-  type        = string
-  #default     = "${path.root}/public/error.html"
 }

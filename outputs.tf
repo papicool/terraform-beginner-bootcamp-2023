@@ -1,14 +1,14 @@
 output "bucket_name" {
   description = "bucket_name from our static website"
-  value = module.terrahouse_aws.bucket_name
+  value = module.home_godofwar_hosting.bucket_name
 }
 
 output "website_endpoint" {
   description = "website_endpoint of our static website"
-  value = module.terrahouse_aws.website_endpoint
+  value = module.home_godofwar_hosting.website_endpoint
 }
 
-output "cloudfront_url" {
+output "domain_name" {
   description = "The CloudFront Distribution Domain Name"
-  value = module.terrahouse_aws.cloudfront_url
+  value = module.terrhome_godofwar_hostingahome_aws.domain_name
 } 

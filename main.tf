@@ -5,23 +5,23 @@ terraform {
       version = "1.0.0"
     }
   }
-#  backend "remote" {
-#    hostname = "app.terraform.io"
-#    organization = "MyTerraformBootcamp"
-#
-#    workspaces {
-#      name = "terra-house-1"
-#    }
-#  }
+/*   backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "MyTerraformBootcamp"
+
+    workspaces {
+      name = "terra-house-1"
+    }
+  } */
 
 
-#   cloud {
-#     organization = "MyTerraformBootcamp"
-# 
-#     workspaces {
-#       name = "terra-house-1"
-#     }
-#   }
+   cloud {
+     organization = "MyTerraformBootcamp"
+ 
+     workspaces {
+       name = "terra-house-1"
+     }
+   }
 
 }
 
@@ -31,14 +31,12 @@ provider "terratowns" {
   token=var.terratowns_access_token
 }
 
-module "terrahouse_aws" {
-  source = "./modules/terrahouse_aws"
+module "home_godofwar_hosting" {
+  source = "./modules/terrahome_aws"
   user_uuid= var.teacherseat_user_uuid
   bucket_name = var.bucket_name
-  error_html_file =  var.error_html_file
-  index_html_file =  var.index_html_file
-  content_version = var.content_version
-  assets_path = var.assets_path
+  public_path =  var.godOfWar.public_path
+  content_version = var.godOfWar.content_version
 } 
 
 resource "terratowns_home" "home" {
@@ -52,8 +50,30 @@ a wild land inhabited by many fierce monsters and warriors.
 To teach his son, whose mother and Kratos' second wife recently died, how to survive in such a world,
 Kratos must master the rage that has driven him for many years and embrace his new role as father and mentor.
 DESCRIPTION
-  domain_name = module.terrahouse_aws.cloudfront_url
+  domain_name = module.home_godofwar_hosting.domain_name
   #domain_name = "3fdq3gz.cloudfront.net"
   town = "missingo"
-  content_version = 1
+  content_version = var.godOfWar.content_version
 }
+
+module "home_fifa23_hosting" {
+  source = "./modules/terrahome_aws"
+  user_uuid= var.teacherseat_user_uuid
+  bucket_name = var.bucket_name
+  public_path =  var.fifa23.public_path
+  content_version = var.fifa23.content_version
+} 
+
+resource "terratowns_home" "home_fifa23" {
+  name = "How to play FIFA 2023!"
+  description = <<DESCRIPTION
+FIFA 23 is a football video game published by EA Sports. 
+It is the 30th installment in the FIFA series that is developed by EA Sports,
+the final installment under the FIFA banner, and released worldwide on 30 September 2022 for Nintendo Switch,
+PlayStation 4, PlayStation 5, Windows, Xbox One and Xbox Series X/S.
+DESCRIPTION
+  domain_name = module.home_fifa23_hosting.domain_name
+  #domain_name = "3fdq3gz.cloudfront.net"
+  town = "missingo"
+  content_version = var.fifa23.content_version
+} 

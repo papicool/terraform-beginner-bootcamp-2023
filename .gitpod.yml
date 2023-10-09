@@ -9,6 +9,7 @@ tasks:
       source ./bin/install_terraform_cli.sh
       source ./bin/generate_tfrc_credentials
       cp $$THEIA_WORKSPACE_ROOT/terraform.tfvars.example $$THEIA_WORKSPACE_ROOT/terraform.tfvars
+      source ./bin/build_provider
       source ~/.bash_profile
   - name: aws-cli
     env:
