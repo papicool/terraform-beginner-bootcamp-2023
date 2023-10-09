@@ -34,7 +34,6 @@ provider "terratowns" {
 module "home_godofwar_hosting" {
   source = "./modules/terrahome_aws"
   user_uuid= var.teacherseat_user_uuid
-  bucket_name = var.bucket_name
   public_path =  var.godOfWar.public_path
   content_version = var.godOfWar.content_version
 } 
@@ -59,7 +58,6 @@ DESCRIPTION
 module "home_fifa23_hosting" {
   source = "./modules/terrahome_aws"
   user_uuid= var.teacherseat_user_uuid
-  bucket_name = var.bucket_name
   public_path =  var.fifa23.public_path
   content_version = var.fifa23.content_version
 } 

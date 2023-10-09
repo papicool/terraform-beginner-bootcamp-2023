@@ -10,5 +10,5 @@ output "website_endpoint" {
 
 output "domain_name" {
   description = "The CloudFront Distribution Domain Name"
-  value = module.terrhome_godofwar_hostingahome_aws.domain_name
+  value = module.home_godofwar_hosting.domain_name
 } 

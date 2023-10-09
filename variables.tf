@@ -3,10 +3,6 @@ variable "teacherseat_user_uuid" {
   type = string
 }
 
-variable "bucket_name" {
-  description = "The name of the S3 bucket"
-  type = string
-}
 
 variable "terratowns_endpoint" {
  type = string
