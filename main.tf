@@ -51,7 +51,7 @@ Kratos must master the rage that has driven him for many years and embrace his n
 DESCRIPTION
   domain_name = module.home_godofwar_hosting.domain_name
   #domain_name = "3fdq3gz.cloudfront.net"
-  town = "missingo"
+  town = "gamers-grotto"
   content_version = var.godOfWar.content_version
 }
 
@@ -72,6 +72,6 @@ PlayStation 4, PlayStation 5, Windows, Xbox One and Xbox Series X/S.
 DESCRIPTION
   domain_name = module.home_fifa23_hosting.domain_name
   #domain_name = "3fdq3gz.cloudfront.net"
-  town = "missingo"
+  town = "gamers-grotto"
   content_version = var.fifa23.content_version
 } 
